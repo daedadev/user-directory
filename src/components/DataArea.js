@@ -97,7 +97,7 @@ export default class DataArea extends Component {
       <>
         <Nav
           handleSearchChange={this.handleSearchChange}
-          countrySelect={this.countrySelect}
+          countrySelect={this.searchByCountry}
         />
         <div className="data-area">
           <DataTable

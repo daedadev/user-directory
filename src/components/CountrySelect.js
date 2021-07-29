@@ -5,23 +5,23 @@ function CountrySelect({ countrySelect }) {
   return (
     <div className="searchbox">
       <form className="form-inline">
-        <select onchange="doSomething();" onfocus="this.selectedIndex = -1;">
-          <option>US</option>
-          <option>AU</option>
-          <option>BR</option>
-          <option>CA</option>
-          <option>CH</option>
-          <option>DE</option>
-          <option>DK</option>
-          <option>ES</option>
-          <option>FI</option>
-          <option>FR</option>
-          <option>GB</option>
-          <option>IE</option>
-          <option>IR</option>
-          <option>NL</option>
-          <option>NZ</option>
-          <option>TR</option>
+        <select onChange={(e) => countrySelect(e.target.value)}>
+          <option value="US">United States</option>
+          <option value="AU">Australia</option>
+          <option value="BR">Brazil</option>
+          <option value="CA">Canada</option>
+          <option value="CH">Switzerland</option>
+          <option value="DE">Germany</option>
+          <option value="DK">Denmark</option>
+          <option value="ES">Spain</option>
+          <option value="FI">Finland</option>
+          <option value="FR">France</option>
+          <option value="GB">Great Britain</option>
+          <option value="IE">Ireland</option>
+          <option value="IR">Iran</option>
+          <option value="NL">Netherlands</option>
+          <option value="NZ">New Zealand</option>
+          <option value="TR">Turkey</option>
         </select>
       </form>
     </div>
