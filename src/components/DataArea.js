@@ -83,6 +83,15 @@ export default class DataArea extends Component {
     });
   }
 
+  searchByGender(gender) {
+    API.getGender(gender).then((results) => {
+      this.setState({
+        users: results.data.results,
+        filteredUsers: results.data.results,
+      });
+    });
+  }
+
   componentDidMount() {
     API.getUsers().then((results) => {
       this.setState({
@@ -121,7 +130,18 @@ export default class DataArea extends Component {
               <option value="TR">Turkey</option>
             </select>
           </form>
+          <form className="former">
+            <h2>Or Select Gender</h2>
+            <select
+              className="selector"
+              onChange={(e) => this.searchByGender(e.target.value)}
+            >
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+          </form>
         </div>
+
         <div className="data-area">
           <DataTable
             headings={this.headings}
