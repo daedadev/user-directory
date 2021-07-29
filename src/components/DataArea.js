@@ -95,7 +95,10 @@ export default class DataArea extends Component {
   render() {
     return (
       <>
-        <Nav handleSearchChange={this.handleSearchChange} />
+        <Nav
+          handleSearchChange={this.handleSearchChange}
+          countrySelect={this.countrySelect}
+        />
         <div className="data-area">
           <DataTable
             headings={this.headings}
