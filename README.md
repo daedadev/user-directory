@@ -4,7 +4,7 @@
 
 This project takes an API and returns 200 employess along with their name, phone#, email, and DOB. You can also search which matches your inputs and returns dynamically as well as filter by country or gender.
 
-Welcome to my portfolio and I hope that you enjoy.
+I hope you enjoy.
 
 Link to the finished webpage hosted on Git: https://wron1.github.io/user-directory/
 
