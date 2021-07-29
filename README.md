@@ -11,7 +11,7 @@ Link to the finished webpage hosted on Git: https://wron1.github.io/user-directo
 
 ## Usage
 
-Top section of the webpage
+Main page where you can search by name, gender, or country.
 ![Screenshot 1](public/Capture.PNG?raw=true)
 
 
