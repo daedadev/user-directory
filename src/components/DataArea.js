@@ -74,6 +74,15 @@ export default class DataArea extends Component {
     this.setState({ filteredUsers: filteredList });
   };
 
+  searchByCountry(country) {
+    API.getCountry(country).then((results) => {
+      this.setState({
+        users: results.data.results,
+        filteredUsers: results.data.results,
+      });
+    });
+  }
+
   componentDidMount() {
     API.getUsers().then((results) => {
       this.setState({
