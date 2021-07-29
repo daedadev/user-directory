@@ -97,8 +97,12 @@ export default class DataArea extends Component {
       <>
         <Nav handleSearchChange={this.handleSearchChange} />
         <div className="searchbox">
-          <form className="form-inline">
-            <select onChange={(e) => this.searchByCountry(e.target.value)}>
+          <form className="former">
+            <h2>Select Country</h2>
+            <select
+              className="selector"
+              onChange={(e) => this.searchByCountry(e.target.value)}
+            >
               <option value="US">United States</option>
               <option value="AU">Australia</option>
               <option value="BR">Brazil</option>

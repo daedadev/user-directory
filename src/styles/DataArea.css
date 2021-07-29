@@ -2,3 +2,36 @@
   margin: 0 auto;
   width: 90%;
 }
+
+.searchbox button {
+  border: 1px solid #101d42;
+}
+
+.searchbox button:hover {
+  background-color: #101d42;
+  color: #ffffff;
+}
+
+.search-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.former {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.selector {
+  display: flex;
+  width: 8%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
